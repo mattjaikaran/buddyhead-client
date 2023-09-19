@@ -7,10 +7,10 @@ import { Button } from '@/components/ui/button';
 import { HeadingH1, HeadingH3, Paragraph } from '@/components/typography';
 import Newsletter from '@/components/newsletter';
 
-const API_URL = process.env.NEXT_PUBLIC_STRAPI_API_URL;
-const skull = `https://buddyhead-app-xvgeb.ondigitalocean.app/uploads/skull_828339ea73.PNG`;
-const sunset = `https://buddyhead-app-xvgeb.ondigitalocean.app/uploads/sunset_b52ecbc189.JPG`;
-const palms = `https://buddyhead-app-xvgeb.ondigitalocean.app/uploads/palms_ed22ac20e4.JPG`;
+const url = 'https://buddyhead-app-xvgeb.ondigitalocean.app'
+const skull = `${url}/uploads/skull_f0f5fb11c0.PNG`;
+const sunset = `${url}/uploads/sunset_ae67ddae90.JPG`;
+const palms = `${url}/uploads/palms_06b808ac51.JPG`;
 ('');
 const Home: NextPage = () => {
   return (

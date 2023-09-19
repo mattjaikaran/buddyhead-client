@@ -4,7 +4,7 @@ import { MainLayout } from '@/layouts/layout';
 import { HeadingH1 } from '@/components/typography';
 
 const url = 'https://buddyhead-app-xvgeb.ondigitalocean.app';
-const skull = `${url}/uploads/skull_828339ea73.PNG`;
+const skull = `${url}/uploads/skull_f0f5fb11c0.PNG`;
 
 const About: NextPage = () => {
   return (

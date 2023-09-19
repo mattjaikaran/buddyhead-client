@@ -10,8 +10,8 @@ import {
 } from 'lucide-react';
 
 const url = 'https://buddyhead-app-xvgeb.ondigitalocean.app';
-const logo = `${url}/uploads/logo_white_926f3e45c6.PNG`;
-const logoPink = `${url}/uploads/logo_pink_6604f4c54b.PNG`;
+const logo = `${url}/uploads/logo_white_1b6ff2a908.PNG`;
+const logoPink = `${url}/uploads/logo_pink_53bea44e60.PNG`;
 
 export type Icon = LucideIcon;
 
