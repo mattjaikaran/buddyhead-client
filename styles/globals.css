@@ -77,3 +77,13 @@
 p {
   margin-bottom: 1rem;
 }
+
+.heroImg::before {
+  content: '';
+  /* position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px; */
+  opacity: 0.75;
+}

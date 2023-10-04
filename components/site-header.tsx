@@ -8,7 +8,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
@@ -34,6 +33,9 @@ export function SiteHeader() {
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => router.push('/reviews')}>
                 Reviews
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => router.push('/label')}>
+                Label
               </DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem onClick={() => router.push('/about')}>

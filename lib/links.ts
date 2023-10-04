@@ -1,5 +1,10 @@
 export const links = [
   {
+    id: 15,
+    title: 'American Primitive',
+    url: 'https://americanprimitive.org/',
+  },
+  {
     id: 1,
     title: 'BuddyHead Merch Store',
     url: 'https://buddyheadstore.myshopify.com/',
