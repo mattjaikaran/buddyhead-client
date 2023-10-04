@@ -10,7 +10,7 @@ import { HeadingH1, HeadingH3, Paragraph } from '@/components/typography';
 import Newsletter from '@/components/newsletter';
 import useAxios from '@/axios';
 
-const skull = `https://printful.s3-accelerate.amazonaws.com/files/a85/a859285cba0932fe2ffbe736b59bf75f?response-content-disposition=inline%3B%20filename%3D%22skull2.png%22&response-content-type=image%2Fpng&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJH7JLGRY6WQHFAZQ%2F20231003%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20231003T012422Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=96918280b2f68dce362cfce09b32f844a18f8e03647bf2f2182f1935d00b7bdf`;
+const skull = `https://buddyheadstore.myshopify.com/cdn/shop/files/skull2.png?v=1675024101&width=1070`;
 const sunset = `https://live.staticflickr.com/65535/53230456924_9baf94b27b_k.jpg`;
 const palms = `https://live.staticflickr.com/65535/53230382953_a2b95215d4_k.jpg`;
 
