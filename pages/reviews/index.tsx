@@ -33,7 +33,9 @@ const ReviewsAll: NextPage = () => {
     <MainLayout>
       {/* TODO: add head */}
       <div className="container">
-        <HeadingH1 className="mt-8 mb-8">Record Reviews</HeadingH1>
+        <HeadingH1 className="mt-8 mb-8 text-center md:text-left">
+          Record Reviews
+        </HeadingH1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {blogs
             ? blogs.map((blog: any) => {

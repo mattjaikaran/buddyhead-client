@@ -9,18 +9,20 @@ const Links: NextPage = () => {
     <MainLayout>
       {/* TODO: add head */}
       {/* TODO: refactor Links into Dynamic Zones */}
-      <div className="container mt-8">
+      <div className="container text-center md:text-left mt-8">
         <HeadingH1 className="mt-8 mb-8">Links</HeadingH1>
-        <div className="">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
           {links.map((link) => {
             return (
               <div className="mt-4" key={link.id}>
-                <Button variant="outline">
-                  <a href={link.url} target="_blank">
-                    {link.title}
-                  </a>
-                </Button>
-                <br />
+                <div>
+                  <Button className="w-80">
+                    <a href={link.url} target="_blank">
+                      {link.title}
+                    </a>
+                  </Button>
+                </div>
+                {/* <br /> */}
               </div>
             );
           })}

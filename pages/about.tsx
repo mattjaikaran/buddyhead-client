@@ -11,25 +11,27 @@ const URL = process.env.NEXT_PUBLIC_STRAPI_API_URL;
 const skull = `https://buddyheadstore.myshopify.com/cdn/shop/files/skull2.png?v=1675024101&width=1070`;
 const About: NextPage = () => {
   const api = useAxios();
-  // useEffect(() => {
-  //   const renderAbout = async () => {
-  //     try {
-  //       const response = await api.get(`/pages?slug=about`);
-  //       console.log('response', response);
-  //       return response;
-  //     } catch (error) {
-  //       console.log('error', error);
-  //     }
-  //   };
-  //   renderAbout();
-  // }, []);
+  useEffect(() => {
+    const renderAbout = async () => {
+      try {
+        const response = await api.get(`/pages?slug=about`);
+        console.log('response', response);
+        return response;
+      } catch (error) {
+        console.log('error', error);
+      }
+    };
+    renderAbout();
+  }, []);
   return (
     <MainLayout>
       {/* TODO: add head */}
       {/* TODO: refactor About into Dynamic Zones */}
       <div className="container">
-        <HeadingH1 className="mt-8 mb-8">About</HeadingH1>
-        <Markdown></Markdown>
+        <HeadingH1 className="mt-8 mb-8 text-center md:text-left">
+          About
+        </HeadingH1>
+        {/* <Markdown></Markdown> */}
         <p>
           {`Yep, Buddyhead is back. This webzine was established in 1998 so 
           it's kind of poetic for it to reappear on its 25th anniversary. 

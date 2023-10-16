@@ -39,6 +39,8 @@ const Home: NextPage = () => {
             backgroundImage: `url(${sunset})`,
             backgroundSize: 'cover',
             backgroundPosition: 'top',
+            // backgroundColor: 'rgba(255,255,255,0.5)',
+            backgroundBlendMode: 'darken',
           }}
           className="px-24 pt-8 pb-24 sm:p-16 md:p-32 text-center heroImg"
         >
@@ -66,9 +68,9 @@ const Home: NextPage = () => {
           </div>
           <div className="p-24 bg-background text-foreground text-center">
             <HeadingH3>view articles</HeadingH3>
-            <Paragraph>here is a one liner</Paragraph>
-            <Button variant="outline" onClick={() => router.push('/')}>
-              Button
+            <Paragraph>check out our latest reviews</Paragraph>
+            <Button variant="outline" onClick={() => router.push('/reviews')}>
+              View Articles
             </Button>
           </div>
         </div>
