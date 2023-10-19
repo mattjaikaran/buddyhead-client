@@ -59,8 +59,8 @@ const Home: NextPage = () => {
         </div> */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-          <img src="/img/dj-10-21.jpeg" alt="" />
-          <img src="/img/icarus-line-must-die.jpeg" alt="" />
+          <img src="/images/dj-10-21.jpeg" alt="" />
+          <img src="/images/icarus-line-must-die.jpeg" alt="" />
           {/* <div className="pink-bg p-24 text-center">
             <HeadingH3 className="text-white">whats happening</HeadingH3>
             <Paragraph className="text-white">keep up to date</Paragraph>
