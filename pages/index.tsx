@@ -48,7 +48,7 @@ const Home: NextPage = () => {
           <Paragraph className="text-white">HAHA OH HELL YEAH</Paragraph>
         </div>
 
-        <div className="p-16 sm:px-32 md:px-48 md:py-32 text-center">
+        {/* <div className="p-16 sm:px-32 md:px-48 md:py-32 text-center">
           <HeadingH3>Title</HeadingH3>
           <Paragraph>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -56,26 +56,28 @@ const Home: NextPage = () => {
             into electronic typesetting, remaining essentially unchanged.
           </Paragraph>
           <Button variant="outline">Button</Button>
-        </div>
+        </div> */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-          <div className="pink-bg p-24 text-center">
+          <img src="/img/dj-10-21.jpeg" alt="" />
+          <img src="/img/icarus-line-must-die.jpeg" alt="" />
+          {/* <div className="pink-bg p-24 text-center">
             <HeadingH3 className="text-white">whats happening</HeadingH3>
             <Paragraph className="text-white">keep up to date</Paragraph>
             <Button variant="outline" onClick={() => router.push('/blog')}>
               View Zine
             </Button>
-          </div>
-          <div className="p-24 bg-background text-foreground text-center">
+          </div> */}
+          {/* <div className="p-24 bg-background text-foreground text-center">
             <HeadingH3>view articles</HeadingH3>
             <Paragraph>check out our latest reviews</Paragraph>
             <Button variant="outline" onClick={() => router.push('/reviews')}>
               View Articles
             </Button>
-          </div>
+          </div> */}
         </div>
 
-        <div className="p-16 md:px-64 md:py-32 bg-background text-foreground text-center">
+        {/* <div className="p-16 md:px-64 md:py-32 bg-background text-foreground text-center">
           <HeadingH3>Title</HeadingH3>
           <Paragraph>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -83,7 +85,7 @@ const Home: NextPage = () => {
             into electronic typesetting, remaining essentially unchanged.
           </Paragraph>
           <Button variant="outline">Button</Button>
-        </div>
+        </div> */}
 
         <img src={palms} alt="img" />
 
