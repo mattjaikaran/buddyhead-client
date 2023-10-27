@@ -69,9 +69,4 @@ export const links = [
     title: 'Kerrang Feature',
     url: 'https://www.kerrang.com/rancid-at-the-drive-in-and-the-icarus-line-feature-in-buddyhead-founders-book-past-lives',
   },
-  {
-    id: 14,
-    title: 'Buddyhead.com',
-    url: 'https://www.buddyhead.com/',
-  },
 ];

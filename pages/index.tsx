@@ -47,6 +47,17 @@ const Home: NextPage = () => {
           <HeadingH1 className="text-white pt-8 sm:pt-0">buddyhead</HeadingH1>
           <Paragraph className="text-white">HAHA OH HELL YEAH</Paragraph>
         </div>
+        <div>
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/7lEoWov1854?si=cbnWGcSx3BKro05f"
+            title="YouTube video player"
+            frame-border="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
 
         {/* <div className="p-16 sm:px-32 md:px-48 md:py-32 text-center">
           <HeadingH3>Title</HeadingH3>
@@ -59,8 +70,6 @@ const Home: NextPage = () => {
         </div> */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-          <img src="/images/dj-10-21.jpeg" alt="" />
-          <img src="/images/icarus-line-must-die.jpeg" alt="" />
           {/* <div className="pink-bg p-24 text-center">
             <HeadingH3 className="text-white">whats happening</HeadingH3>
             <Paragraph className="text-white">keep up to date</Paragraph>
@@ -87,7 +96,7 @@ const Home: NextPage = () => {
           <Button variant="outline">Button</Button>
         </div> */}
 
-        <img src={palms} alt="img" />
+        {/* <img src={palms} alt="img" /> */}
 
         <Newsletter />
         <div className="flex justify-center my-4">
