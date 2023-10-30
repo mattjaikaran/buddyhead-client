@@ -49,7 +49,7 @@ const Home: NextPage = () => {
         </div>
         <div>
           <iframe
-            width="100%"
+            width="560"
             height="315"
             src="https://www.youtube.com/embed/7lEoWov1854?si=cbnWGcSx3BKro05f"
             title="YouTube video player"
