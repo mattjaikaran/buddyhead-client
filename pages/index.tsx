@@ -47,16 +47,18 @@ const Home: NextPage = () => {
           <HeadingH1 className="text-white pt-8 sm:pt-0">buddyhead</HeadingH1>
           <Paragraph className="text-white">HAHA OH HELL YEAH</Paragraph>
         </div>
-        <div>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/7lEoWov1854?si=cbnWGcSx3BKro05f"
-            title="YouTube video player"
-            frame-border="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          />
+        <div className="grid gap-4 place-content-center mt-16">
+          <div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/7lEoWov1854?si=cbnWGcSx3BKro05f"
+              title="YouTube video player"
+              frame-border="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
         </div>
 
         {/* <div className="p-16 sm:px-32 md:px-48 md:py-32 text-center">

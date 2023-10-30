@@ -31,8 +31,14 @@ export function SiteHeader() {
               <DropdownMenuItem onClick={() => router.push('/blog')}>
                 Zine
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => router.push('/reviews')}>
-                Reviews
+              <DropdownMenuItem>
+                <Link
+                  href="https://buddyheadstore.myshopify.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Store
+                </Link>
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => router.push('/label')}>
                 Label

@@ -13,8 +13,8 @@ export const siteConfig = {
       href: '/blog',
     },
     {
-      title: 'Reviews',
-      href: '/reviews',
+      title: 'Store',
+      href: 'https://buddyheadstore.myshopify.com/',
     },
     {
       title: 'Label',
