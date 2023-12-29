@@ -8,7 +8,7 @@ export function HeadingH1({
 }) {
   return (
     <h1
-      className={`scroll-m-20 mb-4 text-4xl font-medium tracking-tight lg:text-5xl ${className}`}
+      className={`scroll-m-20 mb-4 text-4xl font-light tracking-tight ${className}`}
       {...props}
     >
       {children}
@@ -26,7 +26,7 @@ export function HeadingH2({
 }) {
   return (
     <h2
-      className={`scroll-m-20 mb-4 text-3xl font-semibold tracking-tight transition-colors first:mt-0 ${className}`}
+      className={`scroll-m-20 mb-4 text-3xl font-light tracking-tight transition-colors first:mt-0 ${className}`}
       {...props}
     >
       {children}
@@ -44,7 +44,7 @@ export function HeadingH3({
 }) {
   return (
     <h3
-      className={`scroll-m-20 mb-4 text-2xl font-semibold tracking-tight ${className}`}
+      className={`scroll-m-20 mb-4 text-2xl font-light tracking-tight ${className}`}
       {...props}
     >
       {children}
@@ -62,7 +62,7 @@ export function HeadingH4({
 }) {
   return (
     <h4
-      className={`scroll-m-20 mb-4 text-xl font-semibold tracking-tight ${className}`}
+      className={`scroll-m-20 mb-4 text-lg font-light tracking-tight ${className}`}
       {...props}
     >
       {children}
@@ -80,11 +80,29 @@ export function HeadingH5({
 }) {
   return (
     <h5
-      className={`scroll-m-20 mb-4 text-lg font-semibold tracking-tight ${className}`}
+      className={`scroll-m-20 mb-4 text-base font-light tracking-tight ${className}`}
       {...props}
     >
       {children}
     </h5>
+  );
+}
+
+export function HeadingH6({
+  children,
+  className,
+  ...props
+}: {
+  children: any;
+  className?: string;
+}) {
+  return (
+    <h6
+      className={`scroll-m-20 mb-4 text-sm font-light tracking-tight ${className}`}
+      {...props}
+    >
+      {children}
+    </h6>
   );
 }
 
@@ -97,10 +115,7 @@ export function Paragraph({
   className?: string;
 }) {
   return (
-    <p
-      className={`leading-7 mb-4 [&:not(:first-child)]:mt-6 ${className}`}
-      {...props}
-    >
+    <p className={`text-sm leading-6 mb-6 ${className}`} {...props}>
       {children}
     </p>
   );

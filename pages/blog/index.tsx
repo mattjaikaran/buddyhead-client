@@ -1,10 +1,10 @@
-import { NextPage } from 'next';
-import { MainLayout } from '@/layouts/layout';
-import { BlogCard } from '@/components/cards/blog-card';
-import { HeadingH1 } from '@/components/typography';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-import { formattedDate, formattedTime } from '@/lib/utils';
+import { NextPage } from "next";
+import { MainLayout } from "@/layouts/layout";
+import { BlogCard } from "@/components/cards/blog-card";
+import { HeadingH1 } from "@/components/typography";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { formattedDate, formattedTime } from "@/lib/utils";
 
 const URL = process.env.NEXT_PUBLIC_STRAPI_API_URL;
 const STRAPI_URL = process.env.NEXT_PUBLIC_API_URL;
@@ -20,7 +20,7 @@ const BlogAll: NextPage = () => {
         }
         return response;
       } catch (error) {
-        console.error('error', error);
+        console.error("error", error);
       }
     };
     renderBlogs();
@@ -29,10 +29,8 @@ const BlogAll: NextPage = () => {
   return (
     <MainLayout>
       {/* TODO: add head */}
-      <div className="container">
-        <HeadingH1 className="mt-8 mb-8 text-center md:text-left">
-          Zine
-        </HeadingH1>
+      <div className="container px-4">
+        <HeadingH1 className="my-8">Zine</HeadingH1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {blogs
             ? blogs.map((blog: any) => {

@@ -18,7 +18,7 @@ export function getStrapiMedia(url: string) {
   return `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:1337'}${url}`;
 }
 
-// handle the redirection to the homepage if the page we are browsinng doesn't exists
+// handle the redirection to the homepage if the page we are browsing doesn't exists
 export function redirectToHomepage() {
   return {
     redirect: {

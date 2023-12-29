@@ -13,28 +13,25 @@ export const siteConfig = {
       href: '/blog',
     },
     {
-      title: 'Store',
-      href: 'https://buddyheadstore.myshopify.com/',
-    },
-    {
       title: 'Label',
       href: '/label',
-    },
-    {
-      title: 'About',
-      href: '/about',
     },
     {
       title: 'Contact',
       href: '/contact',
     },
     {
-      title: 'Links',
-      href: '/links',
+      title: 'Merch',
+      href: 'https://buddyheadstore.myshopify.com/',
+      external: true,
+      target: '_blank',
     },
   ],
   links: {
-    twitter: 'https://twitter.com/buddyhead',
+    facebook: 'http://facebook.com/Buddyhead420',
     instagram: 'https://instagram.com/buddyhead_',
+    twitch: 'https://www.twitch.tv/buddyhead',
+    twitter: 'https://twitter.com/buddyhead',
+    youtube: 'https://www.youtube.com/@BUDDYHEAD',
   },
 };

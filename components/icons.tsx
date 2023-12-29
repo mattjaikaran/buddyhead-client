@@ -5,9 +5,15 @@ import {
   SunMedium,
   Twitter,
   Instagram,
+  Facebook,
+  Twitch,
+  Youtube,
+  Skull,
+  ArrowUpRight,
+  Menu,
   // @ts-ignore
   type Icon as LucideIcon,
-} from 'lucide-react';
+} from "lucide-react";
 // import logoPink from '@/public/images/logo-pink.png';
 // import logoWhite from '@/public/images/logo-white.png';
 // const url = 'https://buddyhead-app-xvgeb.ondigitalocean.app';
@@ -21,6 +27,12 @@ export const Icons = {
   moon: Moon,
   twitter: Twitter,
   instagram: Instagram,
+  facebook: Facebook,
+  twitch: Twitch,
+  youtube: Youtube,
+  skull: Skull,
+  arrowUpRight: ArrowUpRight,
+  menu: Menu,
   logo: (props: any) => (
     <img src={logoWhite} width={100} alt="logo white" {...props} />
   ),
