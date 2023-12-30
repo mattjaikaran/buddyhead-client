@@ -21,8 +21,8 @@ export const links = [
   },
   {
     id: 5,
-    title: 'The Cauterizers "Bender Ender" Vinyl release',
-    url: 'https://www.gofundme.com/f/the-cauterizers-bender-ender-vinyl-release?utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all&utm_source=customer',
+    title: 'The Cauterizers - "Bender Ender"',
+    url: 'https://sparta.ffm.to/bender-ender',
   },
   {
     id: 6,
