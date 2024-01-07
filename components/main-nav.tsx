@@ -1,10 +1,8 @@
-import * as React from 'react';
-import Link from 'next/link';
-
-import { NavItem } from '@/types/nav';
-
-import { cn } from '@/lib/utils';
-
+import * as React from "react";
+import Link from "next/link";
+import { NavItem } from "@/types/nav";
+import { cn } from "@/lib/utils";
+import { Icons } from "./icons";
 interface MainNavProps {
   items?: NavItem[];
 }
@@ -20,12 +18,18 @@ export function MainNav({ items }: MainNavProps) {
                 <Link
                   key={index}
                   href={item.href}
+                  target={item.target}
                   className={cn(
-                    'flex items-center text-sm font-medium text-muted-foreground',
-                    item.disabled && 'cursor-not-allowed opacity-80'
+                    "flex items-center text-sm font-light uppercase underline-offset-4 hover:underline",
+                    item.disabled &&
+                      "cursor-not-allowed opacity-80 hover:no-underline"
                   )}
+                  aria-disabled={item.disabled}
                 >
                   {item.title}
+                  {item.external && (
+                    <Icons.arrowUpRight strokeWidth="1.5" className="h-4 w-4" />
+                  )}
                 </Link>
               )
           )}

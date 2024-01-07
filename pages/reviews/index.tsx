@@ -1,10 +1,10 @@
-import { BlogCard } from '@/components/cards/blog-card';
-import { HeadingH1 } from '@/components/typography';
-import { formattedDate, formattedTime } from '@/lib/utils';
-import axios from 'axios';
-import { NextPage } from 'next';
-import { useState, useEffect } from 'react';
-import { MainLayout } from '@/layouts/layout';
+import { BlogCard } from "@/components/cards/blog-card";
+import { HeadingH1 } from "@/components/typography";
+import { formattedDate, formattedTime } from "@/lib/utils";
+import axios from "axios";
+import { NextPage } from "next";
+import { useState, useEffect } from "react";
+import { MainLayout } from "@/layouts/layout";
 
 const URL = process.env.NEXT_PUBLIC_STRAPI_API_URL;
 const STRAPI_URL = process.env.NEXT_PUBLIC_API_URL;
@@ -17,13 +17,13 @@ const ReviewsAll: NextPage = () => {
         const response = await axios.get(
           `${URL}/blogs?populate=*&filters[categories][slug][$eq]=reviews`
         );
-        console.log('response', response);
+        console.log("response", response);
         if (response.status === 200) {
           setBlogs(response.data.data);
         }
         return response;
       } catch (error) {
-        console.error('error', error);
+        console.error("error", error);
       }
     };
     renderBlogs();
@@ -32,10 +32,8 @@ const ReviewsAll: NextPage = () => {
   return (
     <MainLayout>
       {/* TODO: add head */}
-      <div className="container">
-        <HeadingH1 className="mt-8 mb-8 text-center md:text-left">
-          Record Reviews
-        </HeadingH1>
+      <div className="container px-4">
+        <HeadingH1 className="my-8">Record Reviews</HeadingH1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {blogs
             ? blogs.map((blog: any) => {
