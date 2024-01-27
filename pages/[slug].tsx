@@ -33,9 +33,11 @@ const RenderSection: React.FC<SectionProps> = (props) => {
   return <div>{JSON.stringify(props)}</div>;
 };
 
+const serverURL = process.env.NEXT_PUBLIC_STRAPI_API_URL;
+
 export const getStaticPaths: GetStaticPaths = async () => {
   // Fetch all page slugs from Strapi
-  const response = await axios.get('http://localhost:1337/pages');
+  const response = await axios.get(`${serverURL}/pages`);
   const pages = response.data;
 
   const paths = pages.map((page: any) => ({
