@@ -13,7 +13,7 @@ import {
   Menu,
   // @ts-ignore
   type Icon as LucideIcon,
-} from "lucide-react";
+} from 'lucide-react';
 // import logoPink from '@/public/images/logo-pink.png';
 // import logoWhite from '@/public/images/logo-white.png';
 // const url = 'https://buddyhead-app-xvgeb.ondigitalocean.app';

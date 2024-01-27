@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import { NextPage } from "next";
-import { MainLayout } from "@/layouts/layout";
-import { HeadingH1 } from "@/components/typography";
-import Markdown from "react-markdown";
-import { useEffect } from "react";
-import axios from "axios";
-import useAxios from "@/axios";
+import { NextPage } from 'next';
+import { MainLayout } from '@/layouts/layout';
+import { HeadingH1 } from '@/components/typography';
+import Markdown from 'react-markdown';
+import { useEffect } from 'react';
+import axios from 'axios';
+import useAxios from '@/axios';
 
 const URL = process.env.NEXT_PUBLIC_STRAPI_API_URL;
 const skull = `https://buddyheadstore.myshopify.com/cdn/shop/files/skull2.png?v=1675024101&width=1070`;
@@ -15,10 +15,10 @@ const About: NextPage = () => {
     const renderAbout = async () => {
       try {
         const response = await api.get(`/pages?slug=about`);
-        console.log("response", response);
+        console.log('response', response);
         return response;
       } catch (error) {
-        console.log("error", error);
+        console.log('error', error);
       }
     };
     renderAbout();

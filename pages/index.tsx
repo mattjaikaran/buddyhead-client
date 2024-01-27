@@ -1,23 +1,23 @@
 /* eslint-disable @next/next/no-img-element */
-import type { NextPage } from "next";
-import Head from "next/head";
+import type { NextPage } from 'next';
+import Head from 'next/head';
 
-import { useEffect } from "react";
-import { useRouter } from "next/router";
-import { MainLayout } from "@/layouts/layout";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import { MainLayout } from '@/layouts/layout';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 import {
   HeadingH1,
   HeadingH2,
   HeadingH3,
   Paragraph,
-} from "@/components/typography";
-import { Icons } from "@/components/icons";
-import Image from "next/image";
-import heroImgPortrait from "@/public/images/hero-portrait.png";
-import heroImgLandscape from "@/public/images/hero-landscape.png";
-import useAxios from "@/axios";
+} from '@/components/typography';
+import { Icons } from '@/components/icons';
+import Image from 'next/image';
+import heroImgPortrait from '@/public/images/hero-portrait.png';
+import heroImgLandscape from '@/public/images/hero-landscape.png';
+import useAxios from '@/axios';
 
 const Home: NextPage = () => {
   const router = useRouter();
@@ -82,7 +82,7 @@ const Home: NextPage = () => {
               music, politics, films, art or whatever else that excites us.
             </Paragraph>
             <Paragraph className="font-bold max-w-[64ch]">
-              We are currently{" "}
+              We are currently{' '}
               <Link href="/dashboard">accepting applications</Link> for
               designers, writers and content creators who share this vision and
               would like to contribute to this project.
@@ -107,7 +107,7 @@ const Home: NextPage = () => {
             <Button
               className="p-0 group-hover:text-background group-hover:italic hover:font-bold"
               variant="link"
-              onClick={() => router.push("/blog")}
+              onClick={() => router.push('/blog')}
             >
               Contribute to the cause
             </Button>
@@ -123,7 +123,7 @@ const Home: NextPage = () => {
             <Button
               className="p-0 group-hover:text-background group-hover:italic hover:font-bold"
               variant="link"
-              onClick={() => router.push("/label")}
+              onClick={() => router.push('/label')}
             >
               Press play
             </Button>
@@ -139,7 +139,7 @@ const Home: NextPage = () => {
             <Button
               className="p-0 group-hover:text-background group-hover:italic hover:font-bold"
               variant="link"
-              onClick={() => router.push("/contact")}
+              onClick={() => router.push('/contact')}
             >
               Join the revolution
             </Button>

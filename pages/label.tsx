@@ -1,8 +1,8 @@
-import { NextPage } from "next";
-import { MainLayout } from "@/layouts/layout";
-import { HeadingH1 } from "@/components/typography";
-import { links } from "@/lib/links";
-import { Button } from "@/components/ui/button";
+import { NextPage } from 'next';
+import { MainLayout } from '@/layouts/layout';
+import { HeadingH1 } from '@/components/typography';
+import { links } from '@/lib/links';
+import { Button } from '@/components/ui/button';
 
 const Label: NextPage = () => {
   return (

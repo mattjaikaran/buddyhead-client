@@ -1,17 +1,17 @@
-import { NextPage } from "next";
-import { MainLayout } from "@/layouts/layout";
-import { HeadingH1, HeadingH6 } from "@/components/typography";
-import { Icons } from "@/components/icons";
-import { siteConfig } from "@/config/site";
-import { buttonVariants } from "@/components/ui/button";
+import { NextPage } from 'next';
+import { MainLayout } from '@/layouts/layout';
+import { HeadingH1, HeadingH6 } from '@/components/typography';
+import { Icons } from '@/components/icons';
+import { siteConfig } from '@/config/site';
+import { buttonVariants } from '@/components/ui/button';
 
-import Link from "next/link";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import * as z from "zod";
+import Link from 'next/link';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+import * as z from 'zod';
 
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
+import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
 import {
   Form,
   FormControl,
@@ -19,23 +19,23 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import axios from "axios";
+} from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import axios from 'axios';
 
 const profileFormSchema = z.object({
   title: z
     .string()
     .min(2, {
-      message: "Title must be at least 2 characters.",
+      message: 'Title must be at least 2 characters.',
     })
     .max(30, {
-      message: "Title must not be longer than 30 characters.",
+      message: 'Title must not be longer than 30 characters.',
     }),
   email: z
     .string({
-      required_error: "Please select an email to display.",
+      required_error: 'Please select an email to display.',
     })
     .email(),
   message: z.string().max(1024).min(10),
@@ -46,17 +46,17 @@ type ProfileFormValues = z.infer<typeof profileFormSchema>;
 const Contact: NextPage = () => {
   const form = useForm<ProfileFormValues>({
     resolver: zodResolver(profileFormSchema),
-    mode: "onChange",
+    mode: 'onChange',
   });
 
   const onSubmit = async (data: ProfileFormValues) => {
     try {
-      console.log("data", data);
+      console.log('data', data);
       // const response = await axios.post(url, data)
       // console.log('response', response)
       // return response
     } catch (error) {
-      console.log("error in onSubmit", error);
+      console.log('error in onSubmit', error);
     }
   };
   return (
@@ -78,7 +78,7 @@ const Contact: NextPage = () => {
                     <Input
                       placeholder="Where can we reach you?"
                       className="placeholder:uppercase"
-                      {...form.register("email")}
+                      {...form.register('email')}
                     />
                   </FormControl>
                   <FormMessage />
@@ -89,7 +89,7 @@ const Contact: NextPage = () => {
                     <Input
                       placeholder="Contribute, join the Discord, dealer's choice, etc."
                       className="placeholder:uppercase"
-                      {...form.register("title")}
+                      {...form.register('title')}
                     />
                   </FormControl>
                   <FormMessage />
@@ -104,7 +104,7 @@ const Contact: NextPage = () => {
                         <Textarea
                           placeholder="What's on your mind? We're here for you."
                           className="resize-none placeholder:uppercase"
-                          {...form.register("message")}
+                          {...form.register('message')}
                           {...field}
                         />
                       </FormControl>
@@ -154,8 +154,8 @@ const Contact: NextPage = () => {
                 >
                   <div
                     className={buttonVariants({
-                      size: "icon",
-                      variant: "ghost",
+                      size: 'icon',
+                      variant: 'ghost',
                     })}
                   >
                     <Icons.facebook
@@ -173,8 +173,8 @@ const Contact: NextPage = () => {
                 >
                   <div
                     className={buttonVariants({
-                      size: "icon",
-                      variant: "ghost",
+                      size: 'icon',
+                      variant: 'ghost',
                     })}
                   >
                     <Icons.instagram className="h-5 w-5" strokeWidth="1.5" />
@@ -189,8 +189,8 @@ const Contact: NextPage = () => {
                 >
                   <div
                     className={buttonVariants({
-                      size: "icon",
-                      variant: "ghost",
+                      size: 'icon',
+                      variant: 'ghost',
                     })}
                   >
                     <Icons.twitch className="h-5 w-5" strokeWidth="1.5" />
@@ -205,8 +205,8 @@ const Contact: NextPage = () => {
                 >
                   <div
                     className={buttonVariants({
-                      size: "icon",
-                      variant: "ghost",
+                      size: 'icon',
+                      variant: 'ghost',
                     })}
                   >
                     <Icons.twitter
@@ -224,8 +224,8 @@ const Contact: NextPage = () => {
                 >
                   <div
                     className={buttonVariants({
-                      size: "icon",
-                      variant: "ghost",
+                      size: 'icon',
+                      variant: 'ghost',
                     })}
                   >
                     <Icons.youtube className="h-5 w-5" strokeWidth="1.5" />

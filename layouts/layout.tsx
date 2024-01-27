@@ -1,10 +1,10 @@
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
-import { Red_Hat_Mono } from "next/font/google";
+import { SiteFooter } from '@/components/site-footer';
+import { SiteHeader } from '@/components/site-header';
+import { Red_Hat_Mono } from 'next/font/google';
 
 const redHatMono = Red_Hat_Mono({
-  subsets: ["latin"],
-  display: "swap",
+  subsets: ['latin'],
+  display: 'swap',
 });
 
 export function MainLayout({ children, ...props }: any) {

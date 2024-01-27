@@ -1,8 +1,8 @@
-import * as React from "react";
-import Link from "next/link";
-import { NavItem } from "@/types/nav";
-import { cn } from "@/lib/utils";
-import { Icons } from "./icons";
+import * as React from 'react';
+import Link from 'next/link';
+import { NavItem } from '@/types/nav';
+import { cn } from '@/lib/utils';
+import { Icons } from './icons';
 interface MainNavProps {
   items?: NavItem[];
 }
@@ -20,9 +20,9 @@ export function MainNav({ items }: MainNavProps) {
                   href={item.href}
                   target={item.target}
                   className={cn(
-                    "flex items-center text-sm font-light uppercase underline-offset-4 hover:underline",
+                    'flex items-center text-sm font-light uppercase underline-offset-4 hover:underline',
                     item.disabled &&
-                      "cursor-not-allowed opacity-80 hover:no-underline"
+                      'cursor-not-allowed opacity-80 hover:no-underline'
                   )}
                   aria-disabled={item.disabled}
                 >
