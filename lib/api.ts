@@ -1,6 +1,6 @@
 import axios, { AxiosResponse } from 'axios';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL;
+const API_URL = process.env.NEXT_PUBLIC_STRAPI_API_URL;
 
 interface Page {
   title: string;
