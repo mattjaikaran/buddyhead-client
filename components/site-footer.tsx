@@ -20,15 +20,13 @@ export function SiteFooter() {
             {links.map((link) => {
               return (
                 <div className="mt-4" key={link.id}>
-                  <div>
-                    <a
-                      href={link.url}
-                      target="_blank"
-                      className="hover:underline hover:italic"
-                    >
-                      {link.title}
-                    </a>
-                  </div>
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    className="hover:underline hover:italic"
+                  >
+                    {link.title}
+                  </a>
                 </div>
               );
             })}

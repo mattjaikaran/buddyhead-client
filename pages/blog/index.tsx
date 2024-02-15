@@ -1,10 +1,10 @@
-import { NextPage } from "next";
-import { MainLayout } from "@/layouts/layout";
-import { BlogCard } from "@/components/cards/blog-card";
-import { HeadingH1 } from "@/components/typography";
-import { useEffect, useState } from "react";
-import axios from "axios";
-import { formattedDate, formattedTime } from "@/lib/utils";
+import { NextPage } from 'next';
+import { MainLayout } from '@/layouts/layout';
+import { BlogCard } from '@/components/cards/blog-card';
+import { HeadingH1 } from '@/components/typography';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import { formattedDate, formattedTime } from '@/lib/utils';
 
 const URL = process.env.NEXT_PUBLIC_STRAPI_API_URL;
 const STRAPI_URL = process.env.NEXT_PUBLIC_API_URL;
@@ -20,7 +20,7 @@ const BlogAll: NextPage = () => {
         }
         return response;
       } catch (error) {
-        console.error("error", error);
+        console.error('error', error);
       }
     };
     renderBlogs();
